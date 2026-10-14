@@ -150,3 +150,4 @@ Referencias: [contextos GLFW](https://www.glfw.org/docs/3.3/context_guide.html),
 4. Pausa al cargar la RAM. Diferencia cuadrados de datos y línea de energía; explica RAM temporal frente a SSD persistente.
 5. Separa las piezas mientras está pausada, continúa hasta el procesador y muestra el intercambio CPU–RAM.
 6. Reinicia y vuelve a explorar. Enseña `Aprendizaje.cpp` y la interpolación de las rutas para relacionarlo con el curso.
+# Proyecto-ExploraPC
