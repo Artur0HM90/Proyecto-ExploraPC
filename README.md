@@ -4,7 +4,7 @@
 |-------|--------|---------|
 |1. Bruce Barrera Neyra|N00439177| [Brucebn89](https://github.com/Brucebn89)|
 |2. Arturo Hurtado Mendez|N00438882|[Artur0HM90](https://github.com/Artur0HM90)|
-|3. Alejandro Sebastian Felix Quispe|N00487581|[]()|
+|3. Alejandro Sebastian Felix Quispe|N00487581|[sebas202312](https://github.com/sebas202312)|
 |4. Gonzalo Gabriel Cuba Sullca|N00417865|[]()|
 |5. Jesús Alberto García Aguilar|N00383896|[]()|
 
