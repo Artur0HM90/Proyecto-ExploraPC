@@ -1,4 +1,4 @@
-# Taller_practico_Semana_1y2_Grupo5
+# COMPUTACIÓN GRÁFICA Y VISUAL - 226534.8751 (Remoto)
 ## Integrantes 
 |Nombres| codigo| ID GitHub|
 |-------|--------|---------|
