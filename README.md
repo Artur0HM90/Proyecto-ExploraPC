@@ -1,3 +1,17 @@
+# Taller_practico_Semana_1y2_Grupo5
+## Integrantes 
+|Nombres| codigo| ID GitHub|
+|-------|--------|---------|
+|1. Bruce Barrera Neyra|N00439177| [Brucebn89](https://github.com/Brucebn89)|
+|2. Arturo Hurtado Mendez|N00438882|[Artur0HM90](https://github.com/Artur0HM90)|
+|3. Alejandro Sebastian Felix Quispe|N00487581|[]()|
+|4. Gonzalo Gabriel Cuba Sullca|N00417865|[]()|
+|5. Jesús Alberto García Aguilar|N0038396|[]()|
+
+
+
+
+
 # ExploraPC v2: aprende cómo funciona una computadora
 
 Aplicación educativa de escritorio en C++17 y OpenGL 3.3 para Computación Gráfica y Visual. La versión 2 añade un recorrido guiado, una demostración de cómo se abre un programa y selección mediante los marcadores de la escena. Conserva las cinco piezas, la cámara orbital y la separación/ensamblaje de la versión anterior.
