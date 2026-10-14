@@ -1,0 +1,23 @@
+ExploraPC v2: aprende como trabajan juntas las partes de una computadora
+
+Extrae todo el ZIP. Abre ExploraPC-v2.exe y conserva la carpeta shaders
+junto al ejecutable. No necesitas compilar para usar este paquete.
+
+Explorar libremente: botones, teclas 1-5 o clic en un numero de la escena.
+Arrastrar gira la camara; la rueda acerca/aleja. R restablece; Esc sale.
+
+Aprender paso a paso: fuente, placa madre, SSD, RAM y procesador.
+Usa Anterior, Siguiente y Volver a explorar.
+
+Que pasa cuando abro un programa: pulsa Reproducir, Pausar/Continuar
+y Reiniciar. Los cuadrados turquesa son datos; la linea dorada
+discontinua es energia. Puedes separar las piezas durante la secuencia.
+Reiniciar deja la demostracion detenida al inicio.
+
+Requisitos: Windows x64 y un controlador grafico con OpenGL 3.3.
+Si falta VCRUNTIME/MSVCP, instala Microsoft Visual C++ Redistributable x64:
+https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist
+
+Para estudiar y compilar, usa ExploraPC-v2-fuentes.zip.
+README y GUIA_APRENDIZAJE explican el codigo y sus conceptos.
+COMPROBACIONES separa las pruebas realizadas y las pendientes.

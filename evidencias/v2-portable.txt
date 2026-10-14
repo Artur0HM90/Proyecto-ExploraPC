@@ -1,0 +1,5 @@
+OpenGL: 3.3.0 - Build 27.20.100.8280 | Intel(R) HD Graphics 630
+Escala de pantalla observada: 1 x 1
+Logica: guia, demo 30/120 FPS, pausa, rutas actuales y clic/arrastre: OK
+Cinco selecciones por teclas, textos, camara y dibujo: correcto
+Animacion a 30/120 FPS, ensamblaje, inversion y aislamiento del panel: correcto

@@ -1,0 +1,60 @@
+UpdateCTestConfiguration  from :C:/proeyectos/ExploraPC/build/vs2026/DartConfiguration.tcl
+Test project C:/proeyectos/ExploraPC/build/vs2026
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: comprobacion_rapida
+
+1: Test command: C:\proeyectos\ExploraPC\build\vs2026\Release\ExploraPC.exe "--smoke"
+1: Working Directory: C:/proeyectos/ExploraPC/build/vs2026
+1: Test timeout computed to be: 60
+1: OpenGL: 3.3.0 - Build 27.20.100.8280 | Intel(R) HD Graphics 630
+1: Escala de pantalla observada: 1 x 1
+1: Logica: guia, demo 30/120 FPS, pausa, rutas actuales y clic/arrastre: OK
+1: Cinco selecciones por teclas, textos, camara y dibujo: correcto
+1: Animacion a 30/120 FPS, ensamblaje, inversion y aislamiento del panel: correcto
+1/2 Test #1: comprobacion_rapida ..............   Passed    1.51 sec
+test 2
+    Start 2: interaccion_grafica
+
+2: Test command: C:\proeyectos\ExploraPC\build\vs2026\Release\ExploraPC.exe "--self-test"
+2: Working Directory: C:/proeyectos/ExploraPC/build/vs2026
+2: Test timeout computed to be: 60
+2: OpenGL: 3.3.0 - Build 27.20.100.8280 | Intel(R) HD Graphics 630
+2: Escala de pantalla observada: 1 x 1
+2: Tecla 1: OK
+2: Tecla 2: OK
+2: Tecla 3: OK
+2: Tecla 4: OK
+2: Tecla 5: OK
+2: Boton 1: OK
+2: Boton 2: OK
+2: Boton 3: OK
+2: Boton 4: OK
+2: Boton 5: OK
+2: Separar: OK
+2: Ensamblar/camara: OK
+2: 960x720: OK
+2: Seleccion por marcador: OK
+2: Arrastre sobre marcador sin seleccion: OK
+2: Recorrido y limites: OK
+2: Demo: fases, pausa y continuar; ensamblada/separada: OK
+2: Reinicio y cambio de modo: OK
+2: Marcador 1: OK
+2: Marcador 2: OK
+2: Marcador 3: OK
+2: Marcador 4: OK
+2: Marcador 5: OK
+2: Cierre mediante Esc y liberacion de recursos: OK
+2: Logica: guia, demo 30/120 FPS, pausa, rutas actuales y clic/arrastre: OK
+2: Cinco selecciones por teclas, textos, camara y dibujo: correcto
+2: Animacion a 30/120 FPS, ensamblaje, inversion y aislamiento del panel: correcto
+2/2 Test #2: interaccion_grafica ..............   Passed   17.47 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  19.13 sec

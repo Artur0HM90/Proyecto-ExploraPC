@@ -1,0 +1,35 @@
+cmake_minimum_required(VERSION 3.24)
+project(ExploraPC VERSION 2.0 LANGUAGES C CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
+add_subdirectory(third_party/glfw EXCLUDE_FROM_ALL)
+add_library(glad STATIC third_party/glad/src/gl.c)
+target_include_directories(glad PUBLIC third_party/glad/include)
+add_library(imgui STATIC
+    third_party/imgui/imgui.cpp third_party/imgui/imgui_draw.cpp
+    third_party/imgui/imgui_tables.cpp third_party/imgui/imgui_widgets.cpp
+    third_party/imgui/backends/imgui_impl_glfw.cpp
+    third_party/imgui/backends/imgui_impl_opengl3.cpp)
+target_include_directories(imgui PUBLIC third_party/imgui third_party/imgui/backends)
+target_link_libraries(imgui PUBLIC glfw)
+add_executable(ExploraPC src/main.cpp src/Camara.cpp src/Componentes.cpp src/Dibujo.cpp src/InterfazEducativa.cpp src/Aprendizaje.cpp)
+target_include_directories(ExploraPC PRIVATE src third_party/glm)
+target_link_libraries(ExploraPC PRIVATE glfw glad imgui)
+if(MSVC)
+    target_compile_options(ExploraPC PRIVATE /W4 /utf-8)
+    target_compile_options(imgui PRIVATE /utf-8)
+endif()
+add_custom_target(copiar_shaders ALL
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    "${CMAKE_CURRENT_SOURCE_DIR}/shaders" "$<TARGET_FILE_DIR:ExploraPC>/shaders")
+add_dependencies(ExploraPC copiar_shaders)
+set_property(TARGET ExploraPC PROPERTY VS_DEBUGGER_WORKING_DIRECTORY "$<TARGET_FILE_DIR:ExploraPC>")
+set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT ExploraPC)
+enable_testing()
+add_test(NAME comprobacion_rapida COMMAND ExploraPC --smoke)
+add_test(NAME interaccion_grafica COMMAND ExploraPC --self-test)
+set_tests_properties(comprobacion_rapida interaccion_grafica PROPERTIES TIMEOUT 60 RUN_SERIAL TRUE)
